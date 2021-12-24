@@ -48,7 +48,7 @@ config :seven_gui_tasks_liveview, SevenGuiTasksLiveviewWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
-      ~r"lib/seven_gui_tasks_liveview_web/(live|views)/.*(ex)$",
+      ~r"lib/seven_gui_tasks_liveview_web/(live|views|tasks)/.*(ex)$",
       ~r"lib/seven_gui_tasks_liveview_web/templates/.*(eex)$"
     ]
   ]

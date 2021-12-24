@@ -36,13 +36,15 @@ defmodule SevenGuiTasksLiveview.MixProject do
       {:phoenix, "~> 1.6.2"},
       {:phoenix_html, "~> 3.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.16.0"},
+      {:phoenix_live_view, "~> 0.17.5"},
       {:floki, ">= 0.30.0", only: :test},
       {:esbuild, "~> 0.2", runtime: Mix.env() == :dev},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.0"},
       {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"}
+      {:plug_cowboy, "~> 2.5"},
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.1", only: [:dev, :test], runtime: false}
     ]
   end
 
@@ -55,7 +57,8 @@ defmodule SevenGuiTasksLiveview.MixProject do
   defp aliases do
     [
       setup: ["deps.get"],
-      "assets.deploy": ["esbuild default --minify", "phx.digest"]
+      "assets.deploy": ["esbuild default --minify", "phx.digest"],
+      lint: ["credo --strict", "dialyzer"]
     ]
   end
 end

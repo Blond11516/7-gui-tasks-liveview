@@ -87,3 +87,21 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.frame {
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 1px 1px gray;
+  overflow: hidden;
+}
+
+.frame-title {
+  background: lightgray;
+  border-bottom: 1px solid gray;
+  padding: 2px;
+  padding-bottom: 0;
+}
+
+.frame-body {
+  padding: 4px;
+}

@@ -1,0 +1,5 @@
+{
+	"terminal.integrated.env.linux": {
+		"PLUG_EDITOR": "vscode://file/__FILE__:__LINE__"
+	}
+}

@@ -121,3 +121,13 @@
 .temperature-input {
   width: 80px;
 }
+
+.flight-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.invalid-date {
+  background: red;
+}
